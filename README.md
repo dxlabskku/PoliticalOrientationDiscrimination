@@ -15,10 +15,8 @@ For data collection, we crawled entire articles posted in the subcategories of d
  
    ![image](https://github.com/dxlabskku/DetectingMediaSource/assets/126649723/e98e2a1b-4022-4cee-aea5-460f4df4c0ce)
 
-- **Test time per case**
+- **Detecting Media Source(multi-classification)**
+     
+   ![image](https://github.com/dxlabskku/DetectingMediaSource/assets/126649723/99afb33f-7b68-4ab2-a5b2-902edf9cbcaa)
 
-   The table below shows the test time each time segment for each feature extraction methods for all models. As you can see, every case took less than 0.03 seconds, showing that they can be used for real-time detection.
-   
-   
-   ![image](https://user-images.githubusercontent.com/117256746/220589754-b01997f6-740f-4b8b-8e0a-9f83c5ec2628.png)
 
