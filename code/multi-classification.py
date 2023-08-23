@@ -45,12 +45,26 @@ n_data_merge = n_data.drop_duplicates(subset = 'title').reset_index(drop = True)
 n_data_merge = n_data.drop_duplicates(subset = 'contents').reset_index(drop = True)
 
 
-# 보수 언론사 / 진보 언론사 라벨 부여
-p_data_final = p_data_merge.loc[:, ["contents"]]
-p_data_final['label'] = 0
+# 긱 언론사별 라벨 부여
+p_data_final = p_data_merge.loc[:, ['source', 'contents']]
+def assign_label(p_data_final):
+    if p_data_final['source'] == '조선일보':
+        return 0
+    elif p_data_final['source'] == '중앙일보':
+        return 1
+    elif p_data_final['source'] == '동아일보':
+        return 2
+p_data_final['label'] = p_data_final.apply(assign_label, axis=1)
 p_data_final['contents'] = p_data_final['contents'].fillna("")
-n_data_final = n_data_merge.loc[:, ["contents"]]
-n_data_final['label'] = 1
+
+n_data_final = n_data_merge.loc[:, ['source', 'contents']]
+def assign_label(n_data_final):
+    if n_data_final['source'] == '한겨레':
+        return 3
+    elif n_data_final['source'] == '경향신문':
+        return 4
+n_data_final['label'] = n_data_final.apply(assign_label, axis=1)
+n_data_final['contents'] = n_data_final['contents'].fillna("")
 
 
 # re 함수 활용 특수문자, 영어, 한자, 숫자, HTML 태그 등 제
