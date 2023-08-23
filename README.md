@@ -13,7 +13,7 @@ For data collection, we crawled entire articles posted in the subcategories of d
 # Result
 - **Detecting Political Orientation(binary-classification)** 
  
-![image](https://github.com/dxlabskku/DetectingMediaSource/assets/126649723/e98e2a1b-4022-4cee-aea5-460f4df4c0ce)
+   ![image](https://github.com/dxlabskku/DetectingMediaSource/assets/126649723/e98e2a1b-4022-4cee-aea5-460f4df4c0ce)
 
 - **Test time per case**
 
