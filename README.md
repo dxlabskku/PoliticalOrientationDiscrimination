@@ -3,7 +3,6 @@
 In this paper, to gain a more detailed understanding of whether it is possible to distinguish biases through news articles or differentiate media outlets themselves, we collected an extensive amount of news articles spanning over five years. To efficiently analyze this vast amount of data, we applied machine learning techniques.
 
 RQ1: Can the political orientation of a news agency be determined solely based on the content of an article?
-
 RQ2: Can the media outlets be determined solely based on the content of an article?
 
 
