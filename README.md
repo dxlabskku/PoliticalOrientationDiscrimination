@@ -4,7 +4,7 @@ In this paper, to gain a more detailed understanding of whether it is possible t
 
 RQ1: Can the political orientation of a news agency be determined solely based on the content of an article?
 
-RQ2: Can the news agency be determined solely based on the content of an article?
+RQ2: Can the media outlets be determined solely based on the content of an article?
 
 
 
