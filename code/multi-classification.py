@@ -149,9 +149,11 @@ y = sum_data_final['label']
 # train-test set 구분
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.1, random_state = 1)
 
+
 # Under-sampling 적용(미적용시 주석처리)
 under_sampler = RandomUnderSampler()
 x_train, y_train = under_sampler.fit_resample(x_train, y_train)
+
 
 # SMOTE 적용(미적용시 주석처리)
 smote = SMOTE()
