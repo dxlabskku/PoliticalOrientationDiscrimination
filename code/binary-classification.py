@@ -132,11 +132,16 @@ x = tfidf_vectorizer.fit_transform(sum_data_final['filtered_contents_str'])
 y = sum_data_final['label']
 
 
-#  train-test set 구분
+# train-test set 구분
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.1, random_state = 1)
 
 
-# SMOTE 적용
+# Under-sampling 적용(미적용시 주석처리)
+under_sampler = RandomUnderSampler()
+x_train, y_train = under_sampler.fit_resample(x_train, y_train)
+
+
+# SMOTE 적용(미적용시 주석처리)
 smote = SMOTE()
 x_train, y_train = smote.fit_resample(x_train, y_train)
 
@@ -162,7 +167,29 @@ print("\n=================== 앙상블 ==================")
 print(classification_report(y_test, t_pred, digits=3))
 
 
-# K-Fold crossvalidation
+# K-Fold crossvalidation(Under-sampling)
+kf = KFold(n_splits = 5)
+accuracies = []
+
+for train_index, val_index in kf.split(x_train):
+    X_train_fold, X_val_fold = x_train[train_index], x_train[val_index]
+    y_train_fold, y_val_fold = y_train.iloc[train_index], y_train.iloc[val_index]
+
+    under_sampler = RandomUnderSampler()
+    X_train_fold_resampled, y_train_fold_resampled = under_sampler.fit_resample(X_train_fold, y_train_fold)
+
+    s_voting_fit = s_voting.fit(X_train_fold_resampled, y_train_fold_resampled)
+
+    y_val_pred = s_voting_fit.predict(X_val_fold)
+    accuracy = accuracy_score(y_val_fold, y_val_pred)
+    accuracies.append(accuracy)
+
+average_accuracy = np.mean(accuracies)
+print(f"Average accuracy: {average_accuracy:.3f}")
+
+
+
+# K-Fold crossvalidation(SMOTE)
 kf = KFold(n_splits = 5)
 accuracies = []
 
