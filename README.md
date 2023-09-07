@@ -13,10 +13,10 @@ For data collection, we crawled entire articles posted in the subcategories of d
 # Result
 - **Result of News Outlets Classification** 
  
-   ![image](https://github.com/dxlabskku/DetectingMediaSource/assets/126649723/e98e2a1b-4022-4cee-aea5-460f4df4c0ce)
+   ![image](https://github.com/dxlabskku/DetectingMediaSource/assets/126649723/0a8f8e0f-3446-4068-b7d6-a8e33e88b0ab)
 
 - **Result of Political Orientation Classification**
      
-   ![image](https://github.com/dxlabskku/DetectingMediaSource/assets/126649723/99afb33f-7b68-4ab2-a5b2-902edf9cbcaa)
+   ![image](https://github.com/dxlabskku/DetectingMediaSource/assets/126649723/6956be90-88be-4e34-beed-64babd93a6f9)
 
 
