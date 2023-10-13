@@ -1,3 +1,4 @@
+### munti-classification ###
 import re
 import pandas as pd
 import numpy as np
@@ -70,13 +71,13 @@ n_data_final['contents'] = n_data_final['contents'].fillna("")
 # re 함수 활용 특수문자, 영어, 한자, 숫자, HTML 태그 등 제
 def clean_text(texts):
     review = texts
-    review = re.sub(r'[@%\\*=()/~#&\+á?\xc3\xa1\-\|\.\:\;\!\-\,\_\~\$\'\♣\▲\ⓒ\■\[\]\“\”\☞\‘\’\▶\·\…\〃\<\>"]', '', review) #remove punctuation
-    review = re.sub(r'\d+','', review)# remove number
-    review = re.sub(r'\s+', ' ', review) #remove extra space
-    review = re.sub(r'<[^>]+>','',review) #remove Html tags
-    review = re.sub(r'\s+', ' ', review) #remove spaces
-    review = re.sub(r'^\s+', '', review) #remove space from start
-    review = re.sub(r'\s+$', '', review) #remove space from the end
+    review = re.sub(r'[@%\\*=()/~#&\+á?\xc3\xa1\-\|\.\:\;\!\-\,\_\~\$\'\♣\▲\ⓒ\■\[\]\“\”\☞\‘\’\▶\·\…\〃\<\>"]', '', review)
+    review = re.sub(r'\d+','', review)
+    review = re.sub(r'\s+', ' ', review)
+    review = re.sub(r'<[^>]+>','',review)
+    review = re.sub(r'\s+', ' ', review)
+    review = re.sub(r'^\s+', '', review)
+    review = re.sub(r'\s+$', '', review)
     review = re.sub(r'[A-Za-z]+', '', review)
     review = re.sub(r'[\u4e00-\u9fff]+', '', review)
     review = re.sub(r'\S+\s+기자', '', review)
