@@ -10,7 +10,7 @@ RQ2: Can we investigate whether a specific news article is created by conservati
 
 For data collection, we crawled entire articles posted in the subcategories of diplomacy/defense within the politics section of the following news sources. To ensure a balanced collection across conservative and progressive administrations, the data collection period was set from January 1, 2017, to April 25, 2023. The total collected dataset amounted to 454,255 articles. After undergoing various preprocessing steps, we utilized a final set of 36,660 conservative and 14,348 progressive articles. Specifically, this included 18,575 articles from The Chosun Ilbo, 13,364 from The JoongAng Ilbo, 4,721 from The Dong-A Ilbo, 7,361 from The Hankyoreh, and 6,987 from The Kyunghyang Shinmun for our analysis.
 
-The sample dataset is available in "news crawling data(sample).xlsx" file. We are only allowed to distribute the data for the research purpose, if you want to achieve full datasets, please complete the request form @ 작성중
+The sample dataset is available in "news crawling data(sample).xlsx" file. We are only allowed to distribute the data for the research purpose, if you want to achieve full datasets, please complete the request form @ https://docs.google.com/forms/d/e/1FAIpQLSc72tNn4QPWYXRcUOv6D8E6zzR0a4IHCS_Qo0Z9NYfkrxw6dw/viewform?usp=sf_link
 
 # Result
 - **Result of News Outlets Classification** 
