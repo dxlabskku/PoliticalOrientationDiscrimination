@@ -31,6 +31,6 @@ The sample dataset is available in "news crawling data(sample).xlsx" file. We ar
   number={???},
   pages={???},
   year={2023},
-  publisher={???}
+  publisher={Elsevier}
 }
 ```
