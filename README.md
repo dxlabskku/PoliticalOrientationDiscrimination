@@ -21,7 +21,8 @@ The sample dataset is available in "news crawling data(sample).xlsx" file. We ar
      
    ![binaryresult](https://github.com/dxlabskku/PoliticalOrientationDiscrimination/assets/126649723/1a9f60a2-0127-4a74-be9a-f754b7723d03)
 
-Reference
+# Reference
+```
 @article{???,
   title={Data-driven Approaches into Political Orientation and News Outlet Discrimination: the Case of News Articles in South Korea},
   author={Lee, Jungkyun and Cha, Junyeop and Park, Eunil},
@@ -32,3 +33,4 @@ Reference
   year={2023},
   publisher={Palgrave}
 }
+```
