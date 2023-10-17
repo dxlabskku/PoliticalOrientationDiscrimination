@@ -24,13 +24,13 @@ The sample dataset is available in "news crawling data(sample).xlsx" file. We ar
 
 ## Reference
 ```
-@article{???,
+@article{lee2023data,
   title={Data-driven Approaches into Political Orientation and News Outlet Discrimination: the Case of News Articles in South Korea},
   author={Lee, Jungkyun and Cha, Junyeop and Park, Eunil},
   journal={Telematics and Informatics},
-  volume={???},
-  number={???},
-  pages={???},
+  #volume={???},
+  #number={???},
+  #pages={???},
   year={2023},
   publisher={Elsevier}
 }
