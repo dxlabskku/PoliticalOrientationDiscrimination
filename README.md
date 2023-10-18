@@ -21,7 +21,7 @@ The sample dataset is available in "news crawling data(sample).xlsx" file. We ar
 
 - **Result of Political Orientation Classification**
      
-   ![FIG6](https://github.com/dxlabskku/PoliticalOrientationDiscrimination/assets/126649723/b21e1fc5-0ac1-4b18-83f2-f6ab08f476c7)
+   ![FIG6](https://github.com/dxlabskku/PoliticalOrientationDiscrimination/assets/126649723/d1c11dad-76e0-4571-9484-f475b5e6f0fa)
 
 
 ## Reference
