@@ -16,11 +16,13 @@ The sample dataset is available in "news crawling data(sample).xlsx" file. We ar
 # Result
 - **Result of News Outlets Classification** 
  
-   ![multyresult](https://github.com/dxlabskku/PoliticalOrientationDiscrimination/assets/126649723/46673e87-5f28-4cf4-8aa6-d1566f69c3cc)
+   ![multyresult](https://github.com/dxlabskku/PoliticalOrientationDiscrimination/assets/126649723/425728ab-a2f6-4f4f-9a98-3a00a5f7fbbc)
+
 
 - **Result of Political Orientation Classification**
      
-   ![binaryresult](https://github.com/dxlabskku/PoliticalOrientationDiscrimination/assets/126649723/1a9f60a2-0127-4a74-be9a-f754b7723d03)
+   ![binaryresult](https://github.com/dxlabskku/PoliticalOrientationDiscrimination/assets/126649723/15365d0c-e037-412c-849f-b823a343398e)
+
 
 ## Reference
 ```
